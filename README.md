@@ -1,6 +1,8 @@
 # Remetric
 
-TODO: Write a gem description
+Remetric tracks your user data in a snap!
+
+This gem interacts with our API.
 
 ## Installation
 
@@ -18,7 +20,25 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+`Key` is always required!
+
+```
+r = Remetric.new "#{remetric_api_token}"
+
+r.track "{{ name }} signed in with {{ email }}.", { 
+  key: user.id, 
+  email: user.email, 
+  name: user.name, 
+  last_sign_in: Time.now.to_i, 
+  comments: user.comments.count
+}
+
+r.save_contact({ 
+  key: user.id, 
+  email: user.email, 
+  name: user.name
+})
+```
 
 ## Contributing
 
