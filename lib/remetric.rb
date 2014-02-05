@@ -1,7 +1,9 @@
 require "remetric/version"
+require "base64"
+require "json"
+require "rest_client"
 
 class Remetric
-  
   def initialize api_key, sandbox = false
     @rm_api_key = api_key
     @rm_sandbox = sandbox
@@ -11,23 +13,33 @@ class Remetric
     @rm_api_key
   end
 
-  def save_contact data = {}
-    RestClient.post "#{endpoint}/contacts/save.json", {
-  		api_key: api_key,
-  		contact: {
-  		  data: data
-  		}
-    }
+  def track data = {}
+    begin
+      RestClient.post "#{endpoint}/events.json", {
+    		remetric_api_key: api_key,
+    		event: data
+      }
+    rescue
+      { errors: "You are unauthorized." }
+    end
   end
-
-  def track description, data = {}
-    RestClient.post "#{endpoint}/events.json", {
-  		api_key: api_key,
-  		event: {
-  			data: data,
-  			description: description
-  		}
-    }
+  
+  def img data = {}
+    base64 = to_base64 data
+    src = "#{endpoint}/events/img/#{base64}";
+    img = "<img src=\"#{src}\" style=\"display: none; \">";
+    img
+  end
+  
+  def redirect data = {}
+    base64 = to_base64 data
+    href = "#{endpoint}/events/redirect/#{base64}";
+    href
+  end
+  
+  def to_base64 data = {}
+    data["remetric_api_key"] = api_key
+    URI.escape Base64.encode64(JSON.generate(data))
   end
 
   def endpoint
