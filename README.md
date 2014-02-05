@@ -23,21 +23,21 @@ Or install it yourself as:
 `Key` is always required!
 
 ```
-r = Remetric.new "#{remetric_api_token}"
+r = Remetric.new "YOURAPIKEYGOESHERE"
 
-r.track "{{ name }} signed in with {{ email }}.", { 
-  key: user.id, 
-  email: user.email, 
-  name: user.name, 
-  last_sign_in: Time.now.to_i, 
-  comments: user.comments.count
+data = { 
+  description: "{{ contact.name }} signed up for {{ product }}.",
+  product: "Remetric.com",
+  contact: {
+    key: "dallas",
+    name: "Dallas Read"
+  },
+  redirect: "http://www.remetric.com" # See below (Hint: only used with "r.redirect")
 }
 
-r.save_contact({ 
-  key: user.id, 
-  email: user.email, 
-  name: user.name
-})
+json_response = r.track data # Just save the data
+tracking_img = r.img data # Render a tracking image
+redirect_link = r.redirect data # Generate a tracking link that redirects somewhere
 ```
 
 ## Contributing
