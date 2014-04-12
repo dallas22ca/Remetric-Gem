@@ -1,8 +1,10 @@
 <h1><%= @model.capitalize.pluralize %></h1>
 
-<ul>
-	<li><%= link_to "Send Message", "#" %></li>
-</ul>
+<% if @cols.include? "email" %>
+	<ul>
+		<li><%= link_to "Send Message", "#" %></li>
+	</ul>
+<% end %>
 
 <table>
   <thead>
@@ -21,7 +23,7 @@
 				<td><%= check_box_tag :n %></td>
 
 				<% @cols.each do |c| %>
-					<td><%= trackable.data[c] %></td>
+					<td><%= link_to trackable.data[c].to_s, trackable_path(trackable.model.pluralize, trackable.key) %></td>
 				<% end %>
       </tr>
     <% end %>

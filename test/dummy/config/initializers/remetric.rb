@@ -3,7 +3,8 @@ Remetric.config do |config|
     contact: {
       key: :id,
       id: "string",
-      name: "string"
+      name: "string",
+      email: "string"
     },
     organization: {
       key: :id,

@@ -8,20 +8,16 @@
 </head>
 <body>
 	
+	<%= render "nav", placeholder: false %>
+	<%= render "nav", placeholder: true %>
 	
-	<div class="topbar topbar_placeholder">
-		<%= render "nav" %>
+	<div class="wide_container">
+		<% if notice %>
+			<p><%= notice %></p>
+		<% end %>
+		
+		<%= yield %>
 	</div>
-	
-	<div class="topbar">
-		<%= render "nav" %>
-	</div>
-	
-	<% if notice %>
-		<p><%= notice %></p>
-	<% end %>
-
-	<%= yield %>
 
 </body>
 </html>

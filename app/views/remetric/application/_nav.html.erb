@@ -1,0 +1,17 @@
+<div class="topbar<%= " topbar_placeholder" if placeholder %>">
+  <div class="wide_container">
+
+		<ul class="nav">
+			<li><%= link_to "Events", events_path, class: "#{"selected" if request.path == events_path}" %></li>
+
+			<% @trackable_models.each do |model| %>
+				<li><%= link_to model.pluralize.capitalize, trackables_path(model.downcase.pluralize), class: "#{"selected" if request.path == trackables_path(model.downcase.pluralize)}" %>
+			<% end %>
+
+			<li><%= link_to "Settings", settings_path, class: "#{"selected" if request.path == settings_path}" %></li>
+		</ul>
+		
+		<div class="clear"></div>
+	
+	</div>
+</div>
