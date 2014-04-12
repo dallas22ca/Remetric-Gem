@@ -1,6 +1,8 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-# Specify your gem's dependencies in remetric.gemspec
 gemspec
 
-gem 'rest-client'
+gem 'mongoid', '~> 4.0.0.beta1', github: 'mongoid/mongoid'
+gem 'jquery-rails'
+gem 'turbolinks'
+gem 'liquid'

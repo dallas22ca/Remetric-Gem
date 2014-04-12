@@ -1,0 +1,31 @@
+<h1>News Feed</h1>
+
+<% if params[:description] %>
+	<%= link_to "<= Back", events_path %>
+	<p>Now showing: <strong><%= @descriptions[0][0] %></strong></p>
+<% else %>
+	<ol>
+		<% @descriptions.each do |description, events| %>
+			<li><%= link_to "#{pluralize events.count, "event"} - #{description}", events_path(description: description) %></li>
+		<% end %>
+	</ol>
+<% end %>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @events.each do |event| %>
+      <tr>
+				<td><%= event.linked_story.html_safe %></td>
+				<td style="display: none; "><%= event.to_json %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<% Remetric.track contact: { id: 1228, name: "Ready" }, organization: { id: "swell", name: "Swell Productions" }, adescription: "{{ contact.name }} from {{ organization.name }} laughs." %>

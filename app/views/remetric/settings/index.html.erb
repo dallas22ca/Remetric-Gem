@@ -1,0 +1,8 @@
+<ul>
+	<li><%= link_to "Delete All #{pluralize Remetric::Event.count, "Event"}", events_destroy_path(confirm: true), method: :delete, data: { confirm: "Are you sure you want to delete all #{pluralize Remetric::Event.count, "event"}?" } %></li>
+
+	<% @trackable_models.each do |model| %>
+		<% count = Remetric::Trackable.where(model: model).count %>
+		<li><%= link_to "Delete All #{pluralize count, model.pluralize.capitalize}", trackables_destroy_path(model.downcase.pluralize, confirm: true), method: :delete, data: { confirm: "Are you sure you want to delete all #{pluralize count, model.pluralize.capitalize}?" } %>
+	<% end %>
+</ul>

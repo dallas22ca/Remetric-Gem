@@ -1,0 +1,467 @@
+-------------------------------------------------------
+Remetric::ContactsControllerTest: test_should_get_index
+-------------------------------------------------------
+-------------------------------------------------------
+Remetric::SettingsControllerTest: test_should_get_index
+-------------------------------------------------------
+----------------------------------------------------------------
+Remetric::TrackablesControllerTest: test_should_create_trackable
+----------------------------------------------------------------
+-----------------------------------------------------------------
+Remetric::TrackablesControllerTest: test_should_destroy_trackable
+-----------------------------------------------------------------
+--------------------------------------------------------
+Remetric::TrackablesControllerTest: test_should_get_edit
+--------------------------------------------------------
+---------------------------------------------------------
+Remetric::TrackablesControllerTest: test_should_get_index
+---------------------------------------------------------
+-------------------------------------------------------
+Remetric::TrackablesControllerTest: test_should_get_new
+-------------------------------------------------------
+--------------------------------------------------------------
+Remetric::TrackablesControllerTest: test_should_show_trackable
+--------------------------------------------------------------
+----------------------------------------------------------------
+Remetric::TrackablesControllerTest: test_should_update_trackable
+----------------------------------------------------------------
+------------------------
+RemetricTest: test_truth
+------------------------
+-------------------------------------------------------
+Remetric::ContactsControllerTest: test_should_get_index
+-------------------------------------------------------
+-------------------------------------------------------
+Remetric::SettingsControllerTest: test_should_get_index
+-------------------------------------------------------
+----------------------------------------------------------------
+Remetric::TrackablesControllerTest: test_should_create_trackable
+----------------------------------------------------------------
+-----------------------------------------------------------------
+Remetric::TrackablesControllerTest: test_should_destroy_trackable
+-----------------------------------------------------------------
+--------------------------------------------------------
+Remetric::TrackablesControllerTest: test_should_get_edit
+--------------------------------------------------------
+---------------------------------------------------------
+Remetric::TrackablesControllerTest: test_should_get_index
+---------------------------------------------------------
+-------------------------------------------------------
+Remetric::TrackablesControllerTest: test_should_get_new
+-------------------------------------------------------
+--------------------------------------------------------------
+Remetric::TrackablesControllerTest: test_should_show_trackable
+--------------------------------------------------------------
+----------------------------------------------------------------
+Remetric::TrackablesControllerTest: test_should_update_trackable
+----------------------------------------------------------------
+------------------------
+RemetricTest: test_truth
+------------------------
+------------------------
+RemetricTest: test_truth
+------------------------
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0540ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('534998a4616972a0da000000'), "description"=>"Do this.", "contact"=>{:key=>123, :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 595.8490ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0540ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('534998be616972a112000000'), "description"=>"Do this.", "contact"=>{:key=>123, :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4890ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.5030ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('534998ce616972a146000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>123, :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7270ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.4620ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('534998e6616972a17a000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>123, :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7010ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1010ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499901616972a1b1000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>123, :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6560ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0540ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499939616972a1f0000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>123, :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4810ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{}, "$orderby"=>{:_id=>-1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.9630ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.3270ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499949616972a226000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>123, :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5070ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1120ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>:contact}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7660ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>:contact, "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5500ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('5349995c616972a25a000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>123, :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5190ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.6970ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>:contact}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 1.0200ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>:contact, "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6160ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499966616972a28e000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>123, :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6990ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.9260ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>:contact}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7730ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>:contact, "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5520ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499979616972a2c2000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>123, :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7760ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.3680ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>:contact}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 1.0090ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>:contact, "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5630ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('534999ad616972a2ff000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>123, :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7700ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1350ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>:contact}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7310ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>:contact, "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.4830ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('534999b6616972a336000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>123, :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5360ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.3810ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>:contact}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 1.0300ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>:contact, "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6250ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499a03616972a372000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>123, :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6280ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.5670ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>:contact}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7840ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>:contact, "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5350ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499a84616972a3eb000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>123, :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4890ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.6470ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>:contact}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.9420ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>:contact, "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.4890ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499afe616972a434000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>123, :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5090ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:count=>"remetric_events", :query=>{}} runtime: 0.3170ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2320ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>:contact}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7300ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>:contact, "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5400ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499b05616972a466000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>123, :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8830ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:count=>"remetric_events", :query=>{}} runtime: 0.4300ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1100ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>:contact}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 1.3070ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>:contact, "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5740ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499b0e616972a49b000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>123, :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8540ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:count=>"remetric_trackables", :query=>{}} runtime: 0.4710ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.9700ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>:contact}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7550ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>:contact, "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.4780ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499b13616972a4ce000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>123, :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6210ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:count=>"remetric_trackables", :query=>{}} runtime: 0.4040ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0340ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>:contact}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8080ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>:contact, "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.4920ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499b81616972a513000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>123, :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5530ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0230ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>"contact"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8130ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>"contact", "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.4640ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499bc9616972a553000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>123, :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8310ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.9790ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>:contact}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8510ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>:contact, "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.4840ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499bd6616972a58a000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>123, :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5810ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1900ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>"contact"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8160ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>"contact", "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5240ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499bf2616972a5c4000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>123, :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7270ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.3070ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>"contact"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7880ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>"contact", "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.4180ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499db9616972a78d000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>123, :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4810ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1060ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>"contact"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8470ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>"contact", "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.4860ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2350ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>"contact"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.6110ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>"contact", "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6090ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499e5a616972a808000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>"123", :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6630ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0870ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>"contact"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7620ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>"contact", "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.4740ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499e91616972a84a000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>"123", :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4980ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.9740ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>"contact"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7790ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>"contact", "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.4930ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499e98616972a880000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>"123", :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5650ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0840ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>"contact"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7590ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>"contact", "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6660ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499eb9616972a8b8000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>"123", :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6630ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.5180ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>"contact"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7250ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>"contact", "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6000ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499ec4616972a8ee000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>"123", :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8590ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2600ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>"contact"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7210ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>"contact", "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.4780ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499ede616972a92b000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>"123", :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5080ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.4700ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>"contact"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 1.8280ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>"contact", "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6110ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499ee9616972a962000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>"123", :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8160ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.9750ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>"contact"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 1.0370ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>"contact", "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5100ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499ef1616972a997000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>"123", :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6140ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.4530ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"", "model"=>"contact"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7270ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>"contact", "key"=>""} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5440ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499efa616972a9cd000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:key=>"123", :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6150ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2660ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"123", "model"=>"contact"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 1.5360ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"model"=>"contact", "key"=>"123"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5570ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_trackables documents=[{"_id"=>BSON::ObjectId('53499f1c616972aa04000000'), "key"=>"123", "model"=>"contact", "data"=>{:id=>"123", :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.5880ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499f1c616972aa04010000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{:id=>"123", :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6250ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0670ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"123", "model"=>"contact"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7670ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_test collection=remetric_trackables selector={"_id"=>BSON::ObjectId('53499f1c616972aa04000000')} update={"$set"=>{"data"=>{"id"=>"123", "name"=>"Awesome Person", :id=>"123", :name=>"Awesome Person"}}} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7870ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499f25616972aa3b000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{"id"=>"123", "name"=>"Awesome Person", :id=>"123", :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7560ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.3810ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"123", "model"=>"contact"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.6680ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_test collection=remetric_trackables selector={"_id"=>BSON::ObjectId('53499f1c616972aa04000000')} update={"$set"=>{"data"=>{"id"=>"123", "name"=>"Awesome Person", :id=>"123", :name=>"Awesome Person"}}} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6950ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499f2d616972aa70000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{"id"=>"123", "name"=>"Awesome Person", :id=>"123", :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6860ms
+------------------------
+RemetricTest: test_truth
+------------------------
+-----------------------------------
+Remetric::EventTest: test_the_truth
+-----------------------------------
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2030ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=remetric_trackables selector={"$query"=>{"key"=>"123", "model"=>"contact"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5970ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_test collection=remetric_trackables selector={"_id"=>BSON::ObjectId('53499f1c616972aa04000000')} update={"$set"=>{"data"=>{"id"=>"123", "name"=>"Awesome Person", :id=>"123", :name=>"Awesome Person"}}} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6890ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=remetric_events documents=[{"_id"=>BSON::ObjectId('53499f35616972aaa6000000'), "description"=>"{{ contact.name }} did this thing.", "contact"=>{"id"=>"123", "name"=>"Awesome Person", :id=>"123", :name=>"Awesome Person"}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7540ms
+------------------------
+RemetricTest: test_truth
+------------------------

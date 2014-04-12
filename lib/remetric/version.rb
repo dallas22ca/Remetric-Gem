@@ -1,3 +1,3 @@
-class Remetric
-  VERSION = "0.0.2"
+module Remetric
+  VERSION = "0.0.3"
 end

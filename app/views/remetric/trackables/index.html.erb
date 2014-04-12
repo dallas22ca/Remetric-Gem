@@ -1,0 +1,29 @@
+<h1><%= @model.capitalize.pluralize %></h1>
+
+<ul>
+	<li><%= link_to "Send Message", "#" %></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+			<th></th>
+
+			<% @cols.each do |c| %>
+				<th><%= c.capitalize %></th>
+			<% end %>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trackables.each do |trackable| %>
+      <tr>
+				<td><%= check_box_tag :n %></td>
+
+				<% @cols.each do |c| %>
+					<td><%= trackable.data[c] %></td>
+				<% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

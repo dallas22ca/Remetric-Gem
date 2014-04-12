@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Remetric</title>
+  <%= stylesheet_link_tag    "remetric/application", media: "all" %>
+  <%= javascript_include_tag "remetric/application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	
+	
+	<div class="topbar topbar_placeholder">
+		<%= render "nav" %>
+	</div>
+	
+	<div class="topbar">
+		<%= render "nav" %>
+	</div>
+	
+	<% if notice %>
+		<p><%= notice %></p>
+	<% end %>
+
+	<%= yield %>
+
+</body>
+</html>

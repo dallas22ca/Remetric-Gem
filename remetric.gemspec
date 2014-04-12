@@ -1,23 +1,25 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'remetric/version'
+$:.push File.expand_path("../lib", __FILE__)
 
-Gem::Specification.new do |spec|
-  spec.name          = "remetric"
-  spec.version       = Remetric::VERSION
-  spec.authors       = ["Dallas Read"]
-  spec.email         = ["dallas@excitereative.ca"]
-  spec.description   = %q{Remetric tracks your user data in a snap!}
-  spec.summary       = %q{Remetric tracks your user data in a snap!}
-  spec.homepage      = "http://www.remetric.com"
-  spec.license       = "MIT"
+require "remetric/version"
 
-  spec.files         = `git ls-files`.split($/)
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
-  spec.require_paths = ["lib"]
+Gem::Specification.new do |s|
+  s.name        = "remetric"
+  s.version     = Remetric::VERSION
+  s.authors     = ["Dallas Read"]
+  s.email       = ["dallas@remetric.com"]
+  s.homepage    = "http://www.remetric.com"
+  s.summary     = s.description = "Track user events in your application."
+  s.license     = "LGPL-3.0"
 
-  spec.add_development_dependency "bundler", "~> 1.3"
-  spec.add_development_dependency "rake"
+  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.test_files = Dir["test/**/*"]
+
+  s.add_dependency "rails", "~> 4.1.0.rc1"
+  s.add_dependency "sass-rails", "~> 4.0.1"
+  s.add_dependency "uglifier", ">= 1.3.0"
+  s.add_dependency "coffee-rails", "~> 4.0.0"
+  s.add_dependency "jquery-rails"
+  s.add_dependency "mongoid"
+  s.add_dependency "turbolinks"
+  s.add_dependency "liquid"
 end
