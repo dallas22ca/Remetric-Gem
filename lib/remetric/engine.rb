@@ -10,6 +10,8 @@ module Remetric
   end
   
   def self.track data = {}
-    Event.create data
+    Thread.new {
+      Event.create data
+    }
   end
 end

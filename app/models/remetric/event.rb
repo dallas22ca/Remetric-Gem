@@ -40,6 +40,8 @@ module Remetric
         
         if self.has_attribute? model
           args = self.send(model)
+          args = args.attributes if args.class.ancestors.include? ActiveRecord::Base
+          args = args.with_indifferent_access
           key_field = cols[:key]
           key_field = :id if key_field.blank?
           key = args[key_field].to_s.parameterize

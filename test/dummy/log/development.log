@@ -56236,3 +56236,620 @@ Processing by Remetric::EventsController#index as HTML
   Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.3ms)
   Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.2ms)
 Completed 200 OK in 42ms (Views: 40.0ms)
+
+
+Started GET "/remetric/settings" for 127.0.0.1 at 2014-04-12 18:43:27 -0300
+
+RuntimeError (Cannot load `Rails.application.database_configuration`:
+Could not load database configuration. No such file - /Users/dallasread/Apps/remetric-ruby/test/dummy/config/database.yml):
+  railties (4.1.0) lib/rails/application/configuration.rb:105:in `database_configuration'
+  activerecord (4.1.0) lib/active_record/railtie.rb:128:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.1.0) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.1.0) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.1.0) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.1.0) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.1.0) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.1.0) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+  activerecord (4.1.0) lib/active_record/base.rb:23:in `<top (required)>'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:628:in `rescue in call'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:619:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/gems/2.0.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/gems/2.0.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/gems/2.0.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/gems/2.0.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.7ms)
+
+
+Started GET "/remetric/settings" for 127.0.0.1 at 2014-04-12 18:43:30 -0300
+
+RuntimeError (Cannot load `Rails.application.database_configuration`:
+Could not load database configuration. No such file - /Users/dallasread/Apps/remetric-ruby/test/dummy/config/database.yml):
+  railties (4.1.0) lib/rails/application/configuration.rb:105:in `database_configuration'
+  activerecord (4.1.0) lib/active_record/railtie.rb:128:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.1.0) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.1.0) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.1.0) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.1.0) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.1.0) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.1.0) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+  activerecord (4.1.0) lib/active_record/base.rb:23:in `<top (required)>'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:628:in `rescue in call'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:619:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/gems/2.0.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/gems/2.0.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/gems/2.0.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/gems/2.0.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.1ms)
+
+
+Started GET "/remetric/settings" for 127.0.0.1 at 2014-04-12 18:44:32 -0300
+
+Gem::LoadError (Specified 'postgresql' for database adapter, but the gem is not loaded. Add `gem 'pg'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.1.0) lib/active_record/connection_adapters/connection_specification.rb:190:in `rescue in spec'
+  activerecord (4.1.0) lib/active_record/connection_adapters/connection_specification.rb:187:in `spec'
+  activerecord (4.1.0) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.1.0) lib/active_record/railtie.rb:129:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.1.0) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.1.0) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.1.0) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.1.0) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.1.0) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.1.0) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+  activerecord (4.1.0) lib/active_record/base.rb:23:in `<top (required)>'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:628:in `rescue in call'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:619:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/gems/2.0.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/gems/2.0.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/gems/2.0.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/gems/2.0.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.8ms)
+
+
+Started GET "/remetric/settings" for 127.0.0.1 at 2014-04-12 18:45:07 -0300
+
+ActiveRecord::NoDatabaseError (FATAL:  database "remetric_ruby_development" does not exist
+Run `$ bin/rake db:create db:migrate` to create your database):
+  activerecord (4.1.0) lib/active_record/connection_adapters/postgresql_adapter.rb:891:in `rescue in connect'
+  activerecord (4.1.0) lib/active_record/connection_adapters/postgresql_adapter.rb:881:in `connect'
+  activerecord (4.1.0) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.0) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.0) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.0) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.0) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.0) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.1.0) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.1.0) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/gems/2.0.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/gems/2.0.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/gems/2.0.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/dallasread/.rbenv/versions/2.0.0-p451/lib/ruby/gems/2.0.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.9ms)
+  [1m[36m (55.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (2.9ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/remetric/settings" for 127.0.0.1 at 2014-04-12 18:45:22 -0300
+Processing by Remetric::SettingsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 3.1970ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_development command={:count=>"remetric_events", :query=>{}} runtime: 0.3570ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_development command={:count=>"remetric_events", :query=>{}} runtime: 0.4700ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_development command={:count=>"remetric_trackables", :query=>{"model"=>"contact"}} runtime: 0.8910ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_development command={:count=>"remetric_trackables", :query=>{"model"=>"organization"}} runtime: 0.5110ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/settings/index.html.erb within layouts/remetric/application (84.5ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (3.2ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (2.8ms)
+Completed 200 OK in 215ms (Views: 197.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/remetric/reset.css?body=1" for 127.0.0.1 at 2014-04-12 18:45:22 -0300
+
+
+Started GET "/assets/remetric/application.css?body=1" for 127.0.0.1 at 2014-04-12 18:45:22 -0300
+
+
+Started GET "/assets/remetric/app.css?body=1" for 127.0.0.1 at 2014-04-12 18:45:22 -0300
+
+
+Started GET "/assets/remetric/nav.css?body=1" for 127.0.0.1 at 2014-04-12 18:45:22 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-12 18:45:22 -0300
+
+
+Started GET "/assets/remetric/tables.css?body=1" for 127.0.0.1 at 2014-04-12 18:45:22 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-12 18:45:22 -0300
+
+
+Started GET "/assets/remetric/people.js?body=1" for 127.0.0.1 at 2014-04-12 18:45:22 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-12 18:45:22 -0300
+
+
+Started GET "/assets/remetric/settings.js?body=1" for 127.0.0.1 at 2014-04-12 18:45:22 -0300
+
+
+Started GET "/assets/remetric/trackables.js?body=1" for 127.0.0.1 at 2014-04-12 18:45:22 -0300
+
+
+Started GET "/assets/remetric/application.js?body=1" for 127.0.0.1 at 2014-04-12 18:45:22 -0300
+
+
+Started GET "/remetric/events" for 127.0.0.1 at 2014-04-12 18:45:24 -0300
+Processing by Remetric::EventsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_events selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9890ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_events selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7140ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/events/index.html.erb within layouts/remetric/application (41.7ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (2.1ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.2ms)
+Completed 200 OK in 59ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/remetric/contacts" for 127.0.0.1 at 2014-04-12 18:45:25 -0300
+Processing by Remetric::TrackablesController#index as HTML
+  Parameters: {"collection"=>"contacts"}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_trackables selector={"model"=>"contact"} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6250ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/trackables/index.html.erb within layouts/remetric/application (4.5ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.6ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.2ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/remetric/organizations" for 127.0.0.1 at 2014-04-12 18:45:25 -0300
+Processing by Remetric::TrackablesController#index as HTML
+  Parameters: {"collection"=>"organizations"}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_trackables selector={"model"=>"organization"} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5290ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/trackables/index.html.erb within layouts/remetric/application (1.7ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (43.8ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.3ms)
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/remetric/contacts" for 127.0.0.1 at 2014-04-12 18:45:26 -0300
+Processing by Remetric::TrackablesController#index as HTML
+  Parameters: {"collection"=>"contacts"}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_trackables selector={"model"=>"contact"} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8530ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/trackables/index.html.erb within layouts/remetric/application (4.4ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.8ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.2ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/remetric/contacts" for 127.0.0.1 at 2014-04-12 18:45:41 -0300
+Processing by Remetric::TrackablesController#index as HTML
+  Parameters: {"collection"=>"contacts"}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_trackables selector={"model"=>"contact"} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7840ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/trackables/index.html.erb within layouts/remetric/application (6.0ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.5ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.4ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/remetric/app.css?body=1" for 127.0.0.1 at 2014-04-12 18:45:41 -0300
+
+
+Started GET "/assets/remetric/nav.css?body=1" for 127.0.0.1 at 2014-04-12 18:45:41 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-12 18:45:41 -0300
+
+
+Started GET "/assets/remetric/reset.css?body=1" for 127.0.0.1 at 2014-04-12 18:45:41 -0300
+
+
+Started GET "/assets/remetric/application.css?body=1" for 127.0.0.1 at 2014-04-12 18:45:41 -0300
+
+
+Started GET "/assets/remetric/tables.css?body=1" for 127.0.0.1 at 2014-04-12 18:45:41 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-12 18:45:41 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-12 18:45:41 -0300
+
+
+Started GET "/assets/remetric/people.js?body=1" for 127.0.0.1 at 2014-04-12 18:45:41 -0300
+
+
+Started GET "/assets/remetric/settings.js?body=1" for 127.0.0.1 at 2014-04-12 18:45:41 -0300
+
+
+Started GET "/assets/remetric/trackables.js?body=1" for 127.0.0.1 at 2014-04-12 18:45:41 -0300
+
+
+Started GET "/assets/remetric/application.js?body=1" for 127.0.0.1 at 2014-04-12 18:45:41 -0300
+
+
+Started GET "/remetric/organizations" for 127.0.0.1 at 2014-04-12 18:45:42 -0300
+Processing by Remetric::TrackablesController#index as HTML
+  Parameters: {"collection"=>"organizations"}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_trackables selector={"model"=>"organization"} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5250ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/trackables/index.html.erb within layouts/remetric/application (1.7ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.6ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.5ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/remetric/settings" for 127.0.0.1 at 2014-04-12 18:45:43 -0300
+Processing by Remetric::SettingsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_development command={:count=>"remetric_events", :query=>{}} runtime: 0.5040ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_development command={:count=>"remetric_events", :query=>{}} runtime: 0.4600ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_development command={:count=>"remetric_trackables", :query=>{"model"=>"contact"}} runtime: 0.4240ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_development command={:count=>"remetric_trackables", :query=>{"model"=>"organization"}} runtime: 0.4560ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/settings/index.html.erb within layouts/remetric/application (7.8ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.4ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.2ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/remetric/organizations" for 127.0.0.1 at 2014-04-12 18:45:44 -0300
+Processing by Remetric::TrackablesController#index as HTML
+  Parameters: {"collection"=>"organizations"}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_trackables selector={"model"=>"organization"} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6110ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/trackables/index.html.erb within layouts/remetric/application (1.9ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.6ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.3ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/remetric/contacts" for 127.0.0.1 at 2014-04-12 18:45:45 -0300
+Processing by Remetric::TrackablesController#index as HTML
+  Parameters: {"collection"=>"contacts"}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_trackables selector={"model"=>"contact"} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6160ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/trackables/index.html.erb within layouts/remetric/application (3.8ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.4ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.4ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/remetric/events" for 127.0.0.1 at 2014-04-12 18:45:45 -0300
+Processing by Remetric::EventsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_events selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7440ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_events selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7310ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/events/index.html.erb within layouts/remetric/application (21.5ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (2.4ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.3ms)
+Completed 200 OK in 38ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/remetric/contacts" for 127.0.0.1 at 2014-04-12 18:45:46 -0300
+Processing by Remetric::TrackablesController#index as HTML
+  Parameters: {"collection"=>"contacts"}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_trackables selector={"model"=>"contact"} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7970ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/trackables/index.html.erb within layouts/remetric/application (4.2ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.8ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.5ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/remetric/events" for 127.0.0.1 at 2014-04-12 18:45:56 -0300
+Processing by Remetric::EventsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_events selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6810ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_events selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7310ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/events/index.html.erb within layouts/remetric/application (24.0ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.5ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.5ms)
+Completed 200 OK in 83ms (Views: 81.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/remetric/organizations" for 127.0.0.1 at 2014-04-12 18:46:00 -0300
+Processing by Remetric::TrackablesController#index as HTML
+  Parameters: {"collection"=>"organizations"}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_trackables selector={"model"=>"organization"} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5600ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/trackables/index.html.erb within layouts/remetric/application (1.8ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.6ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.5ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/remetric/contacts" for 127.0.0.1 at 2014-04-12 18:46:01 -0300
+Processing by Remetric::TrackablesController#index as HTML
+  Parameters: {"collection"=>"contacts"}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_trackables selector={"model"=>"contact"} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5810ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/trackables/index.html.erb within layouts/remetric/application (4.0ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.4ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (2.4ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/remetric/organizations" for 127.0.0.1 at 2014-04-12 18:46:02 -0300
+Processing by Remetric::TrackablesController#index as HTML
+  Parameters: {"collection"=>"organizations"}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_trackables selector={"model"=>"organization"} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4380ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/trackables/index.html.erb within layouts/remetric/application (1.5ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (2.3ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (2.2ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/remetric/settings" for 127.0.0.1 at 2014-04-12 18:46:03 -0300
+Processing by Remetric::SettingsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_development command={:count=>"remetric_events", :query=>{}} runtime: 0.4990ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_development command={:count=>"remetric_events", :query=>{}} runtime: 0.6680ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_development command={:count=>"remetric_trackables", :query=>{"model"=>"contact"}} runtime: 0.4790ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_development command={:count=>"remetric_trackables", :query=>{"model"=>"organization"}} runtime: 0.4180ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/settings/index.html.erb within layouts/remetric/application (7.4ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.6ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.3ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/remetric/organizations" for 127.0.0.1 at 2014-04-12 18:46:03 -0300
+Processing by Remetric::TrackablesController#index as HTML
+  Parameters: {"collection"=>"organizations"}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_trackables selector={"model"=>"organization"} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4420ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/trackables/index.html.erb within layouts/remetric/application (1.5ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.6ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.3ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/remetric/settings" for 127.0.0.1 at 2014-04-12 18:46:04 -0300
+Processing by Remetric::SettingsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_development command={:count=>"remetric_events", :query=>{}} runtime: 0.4850ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_development command={:count=>"remetric_events", :query=>{}} runtime: 0.6860ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_development command={:count=>"remetric_trackables", :query=>{"model"=>"contact"}} runtime: 0.4830ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_development command={:count=>"remetric_trackables", :query=>{"model"=>"organization"}} runtime: 0.4170ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/settings/index.html.erb within layouts/remetric/application (7.1ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.9ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.3ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/remetric/events" for 127.0.0.1 at 2014-04-12 18:46:05 -0300
+Processing by Remetric::EventsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_events selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7400ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_events selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7290ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/events/index.html.erb within layouts/remetric/application (22.2ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (2.1ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.2ms)
+Completed 200 OK in 40ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/remetric/events?description=%7B%7B+contact.name+%7D%7D+from+%7B%7B+organization.name+%7D%7D+laughs." for 127.0.0.1 at 2014-04-12 18:46:07 -0300
+Processing by Remetric::EventsController#index as HTML
+  Parameters: {"description"=>"{{ contact.name }} from {{ organization.name }} laughs."}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_events selector={"description"=>"{{ contact.name }} from {{ organization.name }} laughs."} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8250ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_events selector={"description"=>"{{ contact.name }} from {{ organization.name }} laughs."} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7860ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/events/index.html.erb within layouts/remetric/application (22.6ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.5ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.2ms)
+Completed 200 OK in 40ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/remetric/events" for 127.0.0.1 at 2014-04-12 18:46:08 -0300
+Processing by Remetric::EventsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_events selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7970ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_events selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6410ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/events/index.html.erb within layouts/remetric/application (25.4ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.4ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.3ms)
+Completed 200 OK in 43ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/remetric/events?description=%7B%7B+contact.name+%7D%7D+eats+breakfast." for 127.0.0.1 at 2014-04-12 18:46:09 -0300
+Processing by Remetric::EventsController#index as HTML
+  Parameters: {"description"=>"{{ contact.name }} eats breakfast."}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_events selector={"description"=>"{{ contact.name }} eats breakfast."} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6680ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_events selector={"description"=>"{{ contact.name }} eats breakfast."} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5150ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/events/index.html.erb within layouts/remetric/application (4.6ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (48.2ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.2ms)
+Completed 200 OK in 68ms (Views: 65.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/remetric/events" for 127.0.0.1 at 2014-04-12 18:46:10 -0300
+Processing by Remetric::EventsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_events selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8060ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_events selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6800ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/events/index.html.erb within layouts/remetric/application (30.5ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.5ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.3ms)
+Completed 200 OK in 47ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/remetric/contacts" for 127.0.0.1 at 2014-04-12 18:46:11 -0300
+Processing by Remetric::TrackablesController#index as HTML
+  Parameters: {"collection"=>"contacts"}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_trackables selector={"model"=>"contact"} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6090ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/trackables/index.html.erb within layouts/remetric/application (4.5ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (2.7ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.3ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/remetric/organizations" for 127.0.0.1 at 2014-04-12 18:46:11 -0300
+Processing by Remetric::TrackablesController#index as HTML
+  Parameters: {"collection"=>"organizations"}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_trackables selector={"model"=>"organization"} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4950ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/trackables/index.html.erb within layouts/remetric/application (1.6ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (2.3ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (2.2ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/remetric/contacts" for 127.0.0.1 at 2014-04-12 18:46:12 -0300
+Processing by Remetric::TrackablesController#index as HTML
+  Parameters: {"collection"=>"contacts"}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_trackables selector={"model"=>"contact"} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7780ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/trackables/index.html.erb within layouts/remetric/application (5.6ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (2.7ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.8ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/remetric/contacts" for 127.0.0.1 at 2014-04-12 18:46:21 -0300
+Processing by Remetric::TrackablesController#index as HTML
+  Parameters: {"collection"=>"contacts"}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=remetric_trackables selector={"model"=>"contact"} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5600ms
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/trackables/index.html.erb within layouts/remetric/application (4.0ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.7ms)
+  Rendered /Users/dallasread/Apps/remetric-ruby/app/views/remetric/application/_nav.html.erb (1.2ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/remetric/reset.css?body=1" for 127.0.0.1 at 2014-04-12 18:46:21 -0300
+
+
+Started GET "/assets/remetric/nav.css?body=1" for 127.0.0.1 at 2014-04-12 18:46:21 -0300
+
+
+Started GET "/assets/remetric/tables.css?body=1" for 127.0.0.1 at 2014-04-12 18:46:21 -0300
+
+
+Started GET "/assets/remetric/application.css?body=1" for 127.0.0.1 at 2014-04-12 18:46:21 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-12 18:46:21 -0300
+
+
+Started GET "/assets/remetric/app.css?body=1" for 127.0.0.1 at 2014-04-12 18:46:21 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-12 18:46:21 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-12 18:46:21 -0300
+
+
+Started GET "/assets/remetric/people.js?body=1" for 127.0.0.1 at 2014-04-12 18:46:21 -0300
+
+
+Started GET "/assets/remetric/settings.js?body=1" for 127.0.0.1 at 2014-04-12 18:46:21 -0300
+
+
+Started GET "/assets/remetric/trackables.js?body=1" for 127.0.0.1 at 2014-04-12 18:46:21 -0300
+
+
+Started GET "/assets/remetric/application.js?body=1" for 127.0.0.1 at 2014-04-12 18:46:21 -0300

@@ -1,8 +1,49 @@
+body {
+	font-family: Helvetica Neue, Helvetica, Arial, Sans Serif;
+	font-weight: 100;
+	font-size: 15px;
+}
+
+a {
+	color: #8F000C;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 32px;
+	line-height: 44px;
+	margin-bottom: 20px;
+}
+
 .clear {
 	clear: both;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.align_center {
+	text-align: center;
 }
 
 .wide_container {
 	width: 980px;
 	margin: 0 auto;
+	padding: 0px 10px;
+}
+
+#yield {
+	min-height: 500px;
+}
+
+#footer {
+	background: #fafafa;
+	border-top: 1px solid #ccc;
+	padding: 20px 0px 50px 0px;
+	font-size: 14px;
 }

@@ -1,9 +1,8 @@
-<h1>News Feed</h1>
-
 <% if params[:description] %>
+	<h1><%= @descriptions[0][0] %></h1>
 	<%= link_to "<= Back", events_path %>
-	<p>Now showing: <strong><%= @descriptions[0][0] %></strong></p>
 <% else %>
+	<h1>What's Going On?</h1>
 	<ol>
 		<% @descriptions.each do |description, events| %>
 			<li><%= link_to "#{pluralize events.count, "event"} - #{description}", events_path(description: description) %></li>

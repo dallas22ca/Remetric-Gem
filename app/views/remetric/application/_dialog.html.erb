@@ -1,0 +1,17 @@
+<div id="dialog_overlay"></div>
+
+<div id="dialog">
+	<%= link_to "x", "#", class: "close close_dialog" %>
+	<h1>Compose A Message</h1>
+	
+	<%= form_tag "message", id: "new_message" do %>
+		<%= label_tag :to %>
+		<%= text_field_tag :to, "3 Contacts", readonly: true %>
+	
+		<%= label_tag :subject %>
+		<%= text_field_tag :subject %>
+
+		<%= text_area_tag :body, nil, id: "message_body" %>
+		<%= button_tag "Send Message" %>
+	<% end %>
+</div>

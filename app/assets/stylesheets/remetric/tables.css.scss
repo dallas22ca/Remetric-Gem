@@ -1,19 +1,24 @@
 table {
+	margin: 20px auto;
 	width: 100%;
 	background: #eee;
 
 	td, th {
-		padding: 5px;
+		padding: 8px;
 		text-align: left;
 	}
 	
 	td {
-		
+		a {
+			font-weight: 200;
+			color: #333;
+		}
 	}
 	
 	th {
-		font-weight: bold;
 		background: #777;
 		color: #fff;
+		font-size: 13px;
+		text-transform: uppercase;
 	}
 }

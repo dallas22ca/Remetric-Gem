@@ -1,7 +1,11 @@
 <div class="topbar<%= " topbar_placeholder" if placeholder %>">
   <div class="wide_container">
+		
+		<%= link_to image_tag("remetric/logo.png"), root_path, id: "logo" %>
+		<%= link_to image_tag("remetric/loading_logo.gif"), root_path, id: "loading_logo" %>
 
 		<ul class="nav">
+			<li><%= link_to "Dashboard", root_path, class: "#{"selected" if request.path == root_path}" %></li>
 			<li><%= link_to "Events", events_path, class: "#{"selected" if request.path == events_path}" %></li>
 
 			<% @trackable_models.each do |model| %>

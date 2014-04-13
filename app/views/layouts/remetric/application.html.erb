@@ -16,8 +16,14 @@
 			<p><%= notice %></p>
 		<% end %>
 		
-		<%= yield %>
+		<div id="yield">
+			<%= yield %>
+		</div>
 	</div>
+	
+	<%= render "footer" %>
+	
+	<%= render "dialog" %>
 
 </body>
 </html>
