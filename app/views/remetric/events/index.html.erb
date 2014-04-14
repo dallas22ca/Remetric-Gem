@@ -22,9 +22,10 @@
       <tr>
 				<td><%= event.linked_story.html_safe %></td>
 				<td style="display: none; "><%= event.to_json %></td>
+				<td><%= link_to "&rarr;".html_safe, event %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<% Remetric.track contact: { id: 1228, name: "Ready" }, organization: { id: "swell", name: "Swell Productions" }, adescription: "{{ contact.name }} from {{ organization.name }} laughs." %>
+<!--< Remetric.track contact: { id: 1228, name: "Ready" }, organization: { id: "swell", name: "Swell Productions" }, adescription: "{{ contact.name }} from {{ organization.name }} laughs." >-->

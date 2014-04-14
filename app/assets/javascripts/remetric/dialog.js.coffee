@@ -2,20 +2,20 @@
 
 @Remetric.dialog =
 
-	init: ->
-		Remetric.dialog.events()
-
 	events: ->
 		$(document).on "click", "#dialog_overlay, .close_dialog", ->
+			# if !$("#send_message:visible").length || confirm "You will lose your current changes. Are you sure you want to continue?"
 			Remetric.dialog.close()
 			false
 		
 		$(document).on "click", ".open_dialog", ->
-			Remetric.dialog.open()
+			dialog = $(this).data("dialog")
+			Remetric.dialog.open dialog
 			false
 	
-	open: ->
-		$("#dialog_overlay, #dialog").fadeIn 100
+	open: (dialog) ->
+		$("#dialog_overlay, ##{dialog}").fadeIn 100
+		Remetric.window()
 		
 	close: ->
-		$("#dialog_overlay, #dialog").fadeOut 100
+		$("#dialog_overlay, .dialog").fadeOut 100

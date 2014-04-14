@@ -7,8 +7,27 @@ module Remetric
 
     # GET /trackables
     def index
-      @trackables = Trackable.where(model: @model)
       @cols = Remetric.config.trackable_models[@model.to_sym].except(:key).map { |k, v| k.to_s }
+      @trackables = Trackable
+      @trackables = @trackables.where(model: @model)
+      
+      cookies["#{@model}_q"] = params[:q] if params[:q]
+      @q = cookies["#{@model}_q"]
+      
+      unless @q.blank?
+        q = Regexp.new @q, i: true
+        any_ofs = []
+        
+        @cols.each do |col|
+          if col == "id"
+            any_ofs.push({ "key" => q })
+          else
+            any_ofs.push({ "data.#{col}" => q })
+          end
+        end
+        
+        @trackables = @trackables.any_of(any_ofs)
+      end
     end
 
     # GET /trackables/1

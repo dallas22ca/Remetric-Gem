@@ -10,7 +10,7 @@
 	right: 0;
 }
 
-#dialog {
+.dialog {
 	display: none;
 	background: #fff;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -35,7 +35,7 @@
 	.close {
 		float: right;
 		color: #fff;
-		font-weight: 100;
+		font-weight: 300;
 		font-size: 24px;
 		line-height: 32px;
 		padding: 10px 20px;
@@ -59,11 +59,16 @@
 			width: 100%;
 			outline: none;
 			resize: none;
+			border-radius: 0;
 		}
 		
 		textarea {
 			height: 200px;
 			padding-bottom: 50px;
+		}
+		
+		#message_trackable_ids {
+			display: none;
 		}
 
 		input[type="text"] {
@@ -76,13 +81,8 @@
 			right: 50%;
 			bottom: 98px;
 			margin-right: -320px;
-			border: 0;
-			background: green;
-			color: #fff;
-			font-size: 16px;
-			font-weight: 100;
-			padding: 10px 20px;
-			cursor: pointer;
+			font-weight: 300;
+			border-radius: 0;
 		}
 		
 		label {

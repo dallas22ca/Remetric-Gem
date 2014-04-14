@@ -1,4 +1,4 @@
-table {
+.table {
 	margin: 20px auto;
 	width: 100%;
 	background: #eee;
@@ -12,6 +12,7 @@ table {
 		a {
 			font-weight: 200;
 			color: #333;
+			display: block;
 		}
 	}
 	

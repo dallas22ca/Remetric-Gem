@@ -1,15 +1,43 @@
 <h1><%= @model.capitalize.pluralize %></h1>
 
-<% if @cols.include? "email" %>
-	<ul>
-		<li><%= link_to "Send Message", "#", class: "open_dialog" %></li>
-	</ul>
+<ul class="nav">
+	<!--<li><%= link_to "Saved Searches", "#", class: "open_dialog", data: { dialog: "search_dialog" } %></li>
+	<li><%= link_to "Advanced Search", "#", class: "open_dialog", data: { dialog: "search_dialog" } %></li>-->
+	
+	
+	<% if @cols.include? "email" %>
+		<!--<li><%= link_to "Send Message", "#", class: "open_send_message" %></li>-->
+	<% end %>
+</ul>
+
+<%= form_tag request.path, method: :get, remote: true, id: "quick_search" do %>
+	<%= text_field_tag :q, @q, placeholder: "Quick Search...", autocomplete: :off %>
+	<%= button_tag "<p class=\"no_loading\">&rarr;</p><p class=\"loading\">I</p>".html_safe, value: "quick" %>
 <% end %>
 
-<table>
+<%= form_tag "search", id: "search" do %>
+	I want to see everyone with:
+	<table>
+		<tbody>
+			<tr>
+				<td><%= select_tag :field, options_for_select(@cols.map(&:capitalize)) %></td>
+				<td><%= select_tag :matcher, options_for_select(Remetric::Trackable.matchers) %></td>
+				<td><%= text_field_tag :q %></td>
+				<td><%= link_to "x", "#" %></td>
+			</tr>
+		</tbody>
+	</table>
+	<%= link_to "+ Add Row", "#" %>
+	<p>31 Results</p>
+	<%= button_tag "Save result" %>
+	<%= button_tag "Reset" %>
+	<%= button_tag "Search" %>
+<% end %>
+
+<table id="trackables" class="table">
   <thead>
     <tr>
-			<th></th>
+			<th style="width: 20px; "></th>
 
 			<% @cols.each do |c| %>
 				<th><%= c.capitalize %></th>
@@ -18,14 +46,23 @@
   </thead>
 
   <tbody>
-    <% @trackables.each do |trackable| %>
-      <tr>
-				<td><%= check_box_tag :n %></td>
-
-				<% @cols.each do |c| %>
-					<td><%= link_to trackable.data[c].to_s, trackable_path(trackable.model.pluralize, trackable.key) %></td>
-				<% end %>
-      </tr>
-    <% end %>
+    <%= render @trackables %>
   </tbody>
 </table>
+
+<div id="send_message" class="dialog">
+	<%= link_to "x", "#", class: "close close_dialog" %>
+	<h1>Compose A Message</h1>
+	
+	<%= form_tag "message", id: "new_message" do %>
+		<%= label_tag :to %>
+		<%= text_field_tag :to, "3 Contacts", readonly: true %>
+		<%= text_area_tag :message_trackable_ids %>
+	
+		<%= label_tag :subject %>
+		<%= text_field_tag :subject %>
+
+		<%= text_area_tag :body, nil, id: "message_body" %>
+		<%= button_tag "Send Message &nbsp; >".html_safe %>
+	<% end %>
+</div>

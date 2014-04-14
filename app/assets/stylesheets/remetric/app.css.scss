@@ -1,6 +1,6 @@
 body {
-	font-family: Helvetica Neue, Helvetica, Arial, Sans Serif;
-	font-weight: 100;
+	font-family: Helvetica, Arial, Sans Serif;
+	font-weight: 300;
 	font-size: 15px;
 }
 
@@ -13,6 +13,33 @@ h1 {
 	font-size: 32px;
 	line-height: 44px;
 	margin-bottom: 20px;
+}
+
+input[type="text"] {
+	font-family: Helvetica, Arial, Sans Serif;
+	font-size: 15px;
+	line-height: 22px;
+	padding: 5px 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	outline: none;
+	resize: none;
+}
+
+button {
+	font-family: Helvetica, Arial, Sans Serif;
+	border-radius: 4px;
+	border: 0;
+	background: #eee;
+	color: #777;
+	font-size: 15px;
+	line-height: 22px;
+	font-weight: 300;
+	padding: 6px 20px;
+	cursor: pointer;
+	vertical-align: top;
+	outline: none;
+	resize: none;
 }
 
 .clear {
@@ -38,12 +65,39 @@ h1 {
 }
 
 #yield {
-	min-height: 500px;
+	min-height: 600px;
+	
+	.nav {
+		float: right;
+		
+		li { 
+			float: left;
+			margin-left: 5px;
+			
+			a {
+				display: block;
+				background: #eee;
+				padding: 10px 20px;
+				color: #777;
+				font-weight: 300;
+			}
+		}
+	}
 }
 
 #footer {
-	background: #fafafa;
+	background: #eee;
 	border-top: 1px solid #ccc;
 	padding: 20px 0px 50px 0px;
-	font-size: 14px;
+	font-size: 13px;
+	color: #777;
+	
+	a {
+		font-weight: 300;
+		color: inherit;
+		
+		&:hover {
+			color: #8F000C;
+		}
+	}
 }

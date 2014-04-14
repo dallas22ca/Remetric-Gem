@@ -4,10 +4,17 @@
 	$("#loading").show()
 
 @Remetric.load = ->
-	Remetric.dialog.init()
 	$(window).resize()
-
+	
+	$(".table").on "click", "td", ->
+		checkbox = $(this).find("input[type='checkbox']")
+		checkbox.prop "checked", !checkbox.prop("checked")
+	
 $ ->
+	Remetric.dialog.events()
+	Remetric.messages.events()
+	Remetric.search.events()
+
 	$(window).resize ->
 		Remetric.window()
 

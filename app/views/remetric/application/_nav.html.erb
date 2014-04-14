@@ -6,10 +6,10 @@
 
 		<ul class="nav">
 			<li><%= link_to "Dashboard", root_path, class: "#{"selected" if request.path == root_path}" %></li>
-			<li><%= link_to "Events", events_path, class: "#{"selected" if request.path == events_path}" %></li>
+			<li><%= link_to "Events", events_path, class: "#{"selected" if controller_name == "events"}" %></li>
 
 			<% @trackable_models.each do |model| %>
-				<li><%= link_to model.pluralize.capitalize, trackables_path(model.downcase.pluralize), class: "#{"selected" if request.path == trackables_path(model.downcase.pluralize)}" %>
+				<li><%= link_to model.pluralize.capitalize, trackables_path(model.downcase.pluralize), class: "#{"selected" if request.path.include? model.downcase.pluralize}" %>
 			<% end %>
 
 			<li><%= link_to "Settings", settings_path, class: "#{"selected" if request.path == settings_path}" %></li>
