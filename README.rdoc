@@ -5,3 +5,6 @@
 3. bundle install
 4. remetric.rb
 5. mongoid.yml
+
+== Attributes
+Defaults to `.attributes`, but uses `remetric_attributes` if available.
