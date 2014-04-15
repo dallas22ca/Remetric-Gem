@@ -2,6 +2,6 @@
 
 <h1><%= @event.story %></h1>
 
-<p><%= @event.to_json %></p>
+<pre><%= JSON.pretty_generate @event.attributes %></pre>
 
 <%= link_to 'Back', events_path %>

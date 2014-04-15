@@ -1,7 +1,9 @@
-<tr>
-	<td><%= check_box_tag "trackable_#{trackable.id}", trackable.id, nil, class: "trackable_checkbox" %></td>
+<% cache trackable do %>
+	<tr>
+		<td><%= check_box_tag "trackable_#{trackable.id}", trackable.id, nil, class: "trackable_checkbox" %></td>
 
-	<% @cols.each do |c| %>
-		<td><%= link_to trackable.data[c].to_s, trackable_path(trackable.model.pluralize, trackable.key) %></td>
-	<% end %>
-</tr>
+		<% @cols.each do |c| %>
+			<td><%= link_to trackable.data[c].to_s, trackable_path(trackable.model.pluralize, trackable.key) %></td>
+		<% end %>
+	</tr>
+<% end %>

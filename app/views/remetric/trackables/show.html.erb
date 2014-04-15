@@ -2,6 +2,6 @@
 
 <h1><%= @trackable.key %></h1>
 
-<p><%= @trackable.data.to_json %></p>
+<pre><%= JSON.pretty_generate @trackable.data %></pre>
 
 <%= link_to 'Back', :back %>

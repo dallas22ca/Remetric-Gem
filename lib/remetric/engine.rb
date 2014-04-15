@@ -14,4 +14,12 @@ module Remetric
       Event.create data
     }
   end
+  
+  def self.track_synchronous data = {}
+    Event.create data
+  end
+  
+  def self.track! data = {}
+    Event.create! data
+  end
 end

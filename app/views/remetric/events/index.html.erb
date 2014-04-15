@@ -18,13 +18,7 @@
   </thead>
 
   <tbody>
-    <% @events.each do |event| %>
-      <tr>
-				<td><%= event.linked_story.html_safe %></td>
-				<td style="display: none; "><%= event.to_json %></td>
-				<td><%= link_to "&rarr;".html_safe, event %></td>
-      </tr>
-    <% end %>
+    <%= render @events %>
   </tbody>
 </table>
 

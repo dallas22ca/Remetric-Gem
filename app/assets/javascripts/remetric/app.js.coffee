@@ -6,9 +6,10 @@
 @Remetric.load = ->
 	$(window).resize()
 	
-	$(".table").on "click", "td", ->
-		checkbox = $(this).find("input[type='checkbox']")
-		checkbox.prop "checked", !checkbox.prop("checked")
+	$(".table").on "click", "td", (e) ->
+		unless $(e.target).is("input[type='checkbox']")
+			checkbox = $(this).find("input[type='checkbox']")
+			checkbox.prop "checked", !checkbox.prop("checked")
 	
 $ ->
 	Remetric.dialog.events()

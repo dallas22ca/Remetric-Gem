@@ -6,6 +6,8 @@ module Remetric
 
     field :description
     
+    index({ description: 1 }, { unique: true, name: "event_description_index" })
+    
     validates_presence_of :description
     
     before_create :attach_trackable_models
@@ -42,7 +44,7 @@ module Remetric
         if self.has_attribute? model
           args = self.send(model)
           
-          if args.method_defined? :remetric_attributes
+          if args.respond_to? :remetric_attributes
             args = args.remetric_attributes
           elsif args.class.ancestors.include? ActiveRecord::Base
             args = args.attributes
