@@ -40,7 +40,7 @@
 			<th style="width: 20px; "></th>
 
 			<% @cols.each do |c| %>
-				<th><%= c.capitalize %></th>
+				<th><%= c.capitalize.gsub(/-|_/, " ") %></th>
 			<% end %>
     </tr>
   </thead>

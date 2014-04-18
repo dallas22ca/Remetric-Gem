@@ -4,4 +4,8 @@
 
 <pre><%= JSON.pretty_generate @trackable.data %></pre>
 
+<table>
+	<%= render @trackable.events %>
+</table>
+
 <%= link_to 'Back', :back %>

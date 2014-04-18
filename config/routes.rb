@@ -8,5 +8,5 @@ Remetric::Engine.routes.draw do
   get '/:collection' => 'trackables#index', as: :trackables
   get '/:collection/:key' => 'trackables#show', as: :trackable
   
-  root to: 'dashboard#index'
+  root to: 'events#index'
 end

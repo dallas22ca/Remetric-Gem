@@ -13,6 +13,10 @@ module Remetric
     validates_presence_of :key
     validates_uniqueness_of :key, scope: :model
     
+    def events
+      Event.where "#{model}.id" => key
+    end
+    
     def self.matchers
       [
         ["contains", "ilike"],
